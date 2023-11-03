@@ -834,7 +834,7 @@ CREATE TABLE projetodevidap(
     habilidade VARCHAR(500) NOT NULL UNIQUE,
     objetos VARCHAR(300) NOT NULL UNIQUE,
     objetivos VARCHAR(300) NOT NULL UNIQUE,
-    FOREIGN KEY (competencias_socio) REFERENCES comp_socio(comp_socio),
+    FOREIGN KEY (competencia_socio) REFERENCES comp_socio(comp_socio),
     FOREIGN KEY (habilidade) REFERENCES comp_sociohab(habilidade)
     
 );
@@ -846,7 +846,7 @@ CREATE TABLE projetodevidas(
     habilidade VARCHAR(500) NOT NULL UNIQUE,
     objetos VARCHAR(300) NOT NULL UNIQUE,
     objetivos VARCHAR(300) NOT NULL UNIQUE,
-    FOREIGN KEY (competencias_socio) REFERENCES comp_socio(comp_socio),
+    FOREIGN KEY (competencia_socio) REFERENCES comp_socio(comp_socio),
     FOREIGN KEY (habilidade) REFERENCES comp_sociohab(habilidade)
     
 );
