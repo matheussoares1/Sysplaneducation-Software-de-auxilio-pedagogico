@@ -670,5 +670,73 @@ CREATE TABLE planejamento_artest (
 );
 
 
+CREATE TABLE competencias_gerais_matematica (
+    id_comp_gerais_matematica INT PRIMARY KEY AUTO_INCREMENT,
+    competencia_geral_matematica VARCHAR(400) NOT NULL UNIQUE
+);
 
+CREATE TABLE competencias_especificas_matematica (
+    id_comp_esp_matematica INT PRIMARY KEY AUTO_INCREMENT,
+    competencia_especifica_matematica VARCHAR(400) NOT NULL UNIQUE
+);
+
+CREATE TABLE habilidades_matematica (
+    id_habilidade_matematica INT PRIMARY KEY AUTO_INCREMENT,
+    codigo_habilidade_matematica VARCHAR(10) NOT NULL UNIQUE,
+    habilidade_matematica VARCHAR(400) NOT NULL UNIQUE
+);
+
+CREATE TABLE planejamento_matematicap (
+    id_planejamento_matematicap INT PRIMARY KEY AUTO_INCREMENT,
+    tema VARCHAR(300) NOT NULL UNIQUE,
+    objetivos VARCHAR(300) NOT NULL UNIQUE,
+    area_conhecimento VARCHAR(300) NOT NULL UNIQUE,
+    competencias_gerais_matematica VARCHAR(400) NOT NULL UNIQUE,
+    competencias_especificas_matematica VARCHAR(400) NOT NULL UNIQUE,
+    habilidades_matematica VARCHAR(400) NOT NULL UNIQUE,
+    objetos VARCHAR(400) NOT NULL UNIQUE,
+    descricao VARCHAR(400) NOT NULL UNIQUE,
+    recursos VARCHAR(255) NOT NULL UNIQUE,
+    avaliacao VARCHAR(255) NOT NULL UNIQUE,
+    FOREIGN KEY (competencias_gerais_matematica) REFERENCES competencias_gerais_matematica (competencia_geral_matematica) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (competencias_especificas_matematica) REFERENCES competencias_especificas_matematica (competencia_especifica_matematica) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (habilidades_matematica) REFERENCES habilidades_matematica (codigo_habilidade_matematica) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+
+
+CREATE TABLE planejamento_matematicas (
+    id_planejamento_matematicas INT PRIMARY KEY AUTO_INCREMENT,
+    tema VARCHAR(300) NOT NULL UNIQUE,
+    objetivos VARCHAR(300) NOT NULL UNIQUE,
+    area_conhecimento VARCHAR(300) NOT NULL UNIQUE,
+    competencias_gerais_matematica VARCHAR(400) NOT NULL UNIQUE,
+    competencias_especificas_matematica VARCHAR(400) NOT NULL UNIQUE,
+    habilidades_matematica VARCHAR(400) NOT NULL UNIQUE,
+    objetos VARCHAR(400) NOT NULL UNIQUE,
+    descricao VARCHAR(400) NOT NULL UNIQUE,
+    recursos VARCHAR(255) NOT NULL UNIQUE,
+    avaliacao VARCHAR(255) NOT NULL UNIQUE,
+    FOREIGN KEY (competencias_gerais_matematica) REFERENCES competencias_gerais_matematica (competencia_geral_matematica) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (competencias_especificas_matematica) REFERENCES competencias_especificas_matematica (competencia_especifica_matematica) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (habilidades_matematica) REFERENCES habilidades_matematica (codigo_habilidade_matematica) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+
+CREATE TABLE planejamento_matematicat (
+    id_planejamento_matematicat INT PRIMARY KEY AUTO_INCREMENT,
+    tema VARCHAR(300) NOT NULL UNIQUE,
+    objetivos VARCHAR(300) NOT NULL UNIQUE,
+    area_conhecimento VARCHAR(300) NOT NULL UNIQUE,
+    competencias_gerais_matematica VARCHAR(400) NOT NULL UNIQUE,
+    competencias_especificas_matematica VARCHAR(400) NOT NULL UNIQUE,
+    habilidades_matematica VARCHAR(400) NOT NULL UNIQUE,
+    objetos VARCHAR(400) NOT NULL UNIQUE,
+    descricao VARCHAR(400) NOT NULL UNIQUE,
+    recursos VARCHAR(255) NOT NULL UNIQUE,
+    avaliacao VARCHAR(255) NOT NULL UNIQUE,
+    FOREIGN KEY (competencias_gerais_matematica) REFERENCES competencias_gerais_matematica (competencia_geral_matematica) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (competencias_especificas_matematica) REFERENCES competencias_especificas_matematica (competencia_especifica_matematica) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (habilidades_matematica) REFERENCES habilidades_matematica (codigo_habilidade_matematica) ON UPDATE CASCADE ON DELETE CASCADE
+);
 
