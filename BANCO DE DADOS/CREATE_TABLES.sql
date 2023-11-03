@@ -811,3 +811,5 @@ CREATE TABLE planejamento_mundo_trabalhot (
     habilidade VARCHAR(400) NOT NULL,
     FOREIGN KEY (habilidade) REFERENCES habilidades_mundo_trabalho (habilidade_mundo_trabalho) ON UPDATE CASCADE ON DELETE CASCADE
 );
+
+
