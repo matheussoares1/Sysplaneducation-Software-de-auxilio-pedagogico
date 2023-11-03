@@ -740,3 +740,74 @@ CREATE TABLE planejamento_matematicat (
     FOREIGN KEY (habilidades_matematica) REFERENCES habilidades_matematica (codigo_habilidade_matematica) ON UPDATE CASCADE ON DELETE CASCADE
 );
 
+CREATE TABLE planejamento_formacao_cidadap (
+    id_planejamento_formacao_cidadap INT PRIMARY KEY AUTO_INCREMENT,
+    tema VARCHAR(300) NOT NULL UNIQUE,
+    objetivos VARCHAR(400) NOT NULL UNIQUE,
+    metodologia VARCHAR(400) NOT NULL UNIQUE,
+    momentos VARCHAR(400) NOT NULL UNIQUE,
+    recursos VARCHAR(255) NOT NULL UNIQUE,
+    avaliacao VARCHAR(255) NOT NULL UNIQUE
+);
+
+CREATE TABLE planejamento_formacao_cidadas (
+    id_planejamento_formacao_cidadas INT PRIMARY KEY AUTO_INCREMENT,
+    tema VARCHAR(300) NOT NULL UNIQUE,
+    objetivos VARCHAR(400) NOT NULL UNIQUE,
+    metodologia VARCHAR(400) NOT NULL UNIQUE,
+    momentos VARCHAR(400) NOT NULL UNIQUE,
+    recursos VARCHAR(255) NOT NULL UNIQUE,
+    avaliacao VARCHAR(255) NOT NULL UNIQUE
+);
+
+CREATE TABLE planejamento_formacao_cidadat (
+    id_planejamento_formacao_cidadat INT PRIMARY KEY AUTO_INCREMENT,
+    tema VARCHAR(300) NOT NULL UNIQUE,
+    objetivos VARCHAR(400) NOT NULL UNIQUE,
+    metodologia VARCHAR(400) NOT NULL UNIQUE,
+    momentos VARCHAR(400) NOT NULL UNIQUE,
+    recursos VARCHAR(255) NOT NULL UNIQUE,
+    avaliacao VARCHAR(255) NOT NULL UNIQUE
+);
+
+CREATE TABLE habilidades_mundo_trabalho (
+    id_habilidade_mundo_trabalho INT PRIMARY KEY AUTO_INCREMENT,
+    codigo_habilidade_mundo_trabalho VARCHAR(10) NOT NULL UNIQUE,
+    habilidade_mundo_trabalho VARCHAR(400) NOT NULL UNIQUE
+);
+
+CREATE TABLE planejamento_mundo_trabalhop (
+    id_planejamento_mundo_trabalhop INT PRIMARY KEY AUTO_INCREMENT,
+    area_conhecimento VARCHAR(300) NOT NULL UNIQUE,
+    tema VARCHAR(300) NOT NULL UNIQUE,
+    objetos_conhecimento VARCHAR(400) NOT NULL,
+    habilidades_mundo_trabalho VARCHAR(400) NOT NULL,
+    recursos VARCHAR(255) NOT NULL,
+    avaliacao VARCHAR(255) NOT NULL,
+    habilidade VARCHAR(400) NOT NULL,
+    FOREIGN KEY (habilidade) REFERENCES habilidades_mundo_trabalho (habilidade_mundo_trabalho) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+CREATE TABLE planejamento_mundo_trabalhos (
+    id_planejamento_mundo_trabalhos INT PRIMARY KEY AUTO_INCREMENT,
+    area_conhecimento VARCHAR(300) NOT NULL UNIQUE,
+    tema VARCHAR(300) NOT NULL UNIQUE,
+    objetos_conhecimento VARCHAR(400) NOT NULL,
+    habilidades_mundo_trabalho VARCHAR(400) NOT NULL,
+    recursos VARCHAR(255) NOT NULL,
+    avaliacao VARCHAR(255) NOT NULL,
+    habilidade VARCHAR(400) NOT NULL,
+    FOREIGN KEY (habilidade) REFERENCES habilidades_mundo_trabalho (habilidade_mundo_trabalho) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+CREATE TABLE planejamento_mundo_trabalhot (
+    id_planejamento_mundo_trabalhot INT PRIMARY KEY AUTO_INCREMENT,
+    area_conhecimento VARCHAR(300) NOT NULL UNIQUE,
+    tema VARCHAR(300) NOT NULL UNIQUE,
+    objetos_conhecimento VARCHAR(400) NOT NULL,
+    habilidades_mundo_trabalho VARCHAR(400) NOT NULL,
+    recursos VARCHAR(255) NOT NULL,
+    avaliacao VARCHAR(255) NOT NULL,
+    habilidade VARCHAR(400) NOT NULL,
+    FOREIGN KEY (habilidade) REFERENCES habilidades_mundo_trabalho (habilidade_mundo_trabalho) ON UPDATE CASCADE ON DELETE CASCADE
+);
