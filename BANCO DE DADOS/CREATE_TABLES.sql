@@ -404,3 +404,271 @@ CREATE TABLE planejamento_biologiat (
     FOREIGN KEY (habilidades) REFERENCES naturezahab (codigo_habilidade) ON UPDATE CASCADE ON DELETE CASCADE
 );
 
+
+CREATE TABLE competencias_gerais_linguagens (
+    id_comp_gerais_linguagens INT PRIMARY KEY AUTO_INCREMENT,
+    competencia_geral_linguagens VARCHAR(400) NOT NULL UNIQUE
+);
+
+
+CREATE TABLE competencias_especificas_linguagens (
+    id_comp_esp_linguagens INT PRIMARY KEY AUTO_INCREMENT,
+    competencia_especifica_linguagens VARCHAR(400) NOT NULL UNIQUE
+);
+
+
+CREATE TABLE habilidades_linguagens (
+    id_habilidade_linguagens INT PRIMARY KEY AUTO_INCREMENT,
+    codigo_habilidade_linguagens VARCHAR(10) NOT NULL UNIQUE,
+    habilidade_linguagens VARCHAR(400) NOT NULL UNIQUE
+);
+
+
+-- Tabela para planejamento de aulas de Língua Portuguesa
+CREATE TABLE planejamento_lingua_portuguesa (
+    id_planejamento_lingua_portuguesa INT PRIMARY KEY AUTO_INCREMENT,
+    tema VARCHAR(300) NOT NULL UNIQUE,
+    objetivos VARCHAR(300) NOT NULL UNIQUE,
+    area_conhecimento VARCHAR(300) NOT NULL UNIQUE,
+    competencias_gerais_linguagens VARCHAR(400) NOT NULL UNIQUE,
+    competencias_especificas_linguagens VARCHAR(400) NOT NULL UNIQUE,
+    habilidades_linguagens VARCHAR(400) NOT NULL UNIQUE,
+    objetos VARCHAR(400) NOT NULL UNIQUE,
+    descricao VARCHAR(400) NOT NULL UNIQUE,
+    recursos VARCHAR(255) NOT NULL UNIQUE,
+    avaliacao VARCHAR(255) NOT NULL UNIQUE,
+    FOREIGN KEY (competencias_gerais_linguagens) REFERENCES competencias_gerais_linguagens (competencia_geral_linguagens) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (competencias_especificas_linguagens) REFERENCES competencias_especificas_linguagens (competencia_especifica_linguagens) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (habilidades_linguagens) REFERENCES habilidades_linguagens (codigo_habilidade_linguagens) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+-- Tabela para planejamento de aulas de Literatura
+CREATE TABLE planejamento_literatura (
+    id_planejamento_literatura INT PRIMARY KEY AUTO_INCREMENT,
+    tema VARCHAR(300) NOT NULL UNIQUE,
+    objetivos VARCHAR(300) NOT NULL UNIQUE,
+    area_conhecimento VARCHAR(300) NOT NULL UNIQUE,
+    competencias_gerais_linguagens VARCHAR(400) NOT NULL UNIQUE,
+    competencias_especificas_linguagens VARCHAR(400) NOT NULL UNIQUE,
+    habilidades_linguagens VARCHAR(400) NOT NULL UNIQUE,
+    objetos VARCHAR(400) NOT NULL UNIQUE,
+    descricao VARCHAR(400) NOT NULL UNIQUE,
+    recursos VARCHAR(255) NOT NULL UNIQUE,
+    avaliacao VARCHAR(255) NOT NULL UNIQUE,
+    FOREIGN KEY (competencias_gerais_linguagens) REFERENCES competencias_gerais_linguagens (competencia_geral_linguagens) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (competencias_especificas_linguagens) REFERENCES competencias_especificas_linguagens (competencia_especifica_linguagens) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (habilidades_linguagens) REFERENCES habilidades_linguagens (codigo_habilidade_linguagens) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+
+CREATE TABLE planejamento_inglesp (
+    id_planejamento_inglesp INT PRIMARY KEY AUTO_INCREMENT,
+    tema VARCHAR(300) NOT NULL UNIQUE,
+    objetivos VARCHAR(300) NOT NULL UNIQUE,
+    area_conhecimento VARCHAR(300) NOT NULL UNIQUE,
+    competencias_gerais_linguagens VARCHAR(400) NOT NULL UNIQUE,
+    competencias_especificas_linguagens VARCHAR(400) NOT NULL UNIQUE,
+    habilidades_linguagens VARCHAR(400) NOT NULL UNIQUE,
+    objetos VARCHAR(400) NOT NULL UNIQUE,
+    descricao VARCHAR(400) NOT NULL UNIQUE,
+    recursos VARCHAR(255) NOT NULL UNIQUE,
+    avaliacao VARCHAR(255) NOT NULL UNIQUE,
+    FOREIGN KEY (competencias_gerais_linguagens) REFERENCES competencias_gerais_linguagens (competencia_geral_linguagens) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (competencias_especificas_linguagens) REFERENCES competencias_especificas_linguagens (competencia_especifica_linguagens) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (habilidades_linguagens) REFERENCES habilidades_linguagens (codigo_habilidade_linguagens) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+CREATE TABLE planejamento_ingless (
+    id_planejamento_ingless INT PRIMARY KEY AUTO_INCREMENT,
+    tema VARCHAR(300) NOT NULL UNIQUE,
+    objetivos VARCHAR(300) NOT NULL UNIQUE,
+    area_conhecimento VARCHAR(300) NOT NULL UNIQUE,
+    competencias_gerais_linguagens VARCHAR(400) NOT NULL UNIQUE,
+    competencias_especificas_linguagens VARCHAR(400) NOT NULL UNIQUE,
+    habilidades_linguagens VARCHAR(400) NOT NULL UNIQUE,
+    objetos VARCHAR(400) NOT NULL UNIQUE,
+    descricao VARCHAR(400) NOT NULL UNIQUE,
+    recursos VARCHAR(255) NOT NULL UNIQUE,
+    avaliacao VARCHAR(255) NOT NULL UNIQUE,
+    FOREIGN KEY (competencias_gerais_linguagens) REFERENCES competencias_gerais_linguagens (competencia_geral_linguagens) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (competencias_especificas_linguagens) REFERENCES competencias_especificas_linguagens (competencia_especifica_linguagens) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (habilidades_linguagens) REFERENCES habilidades_linguagens (codigo_habilidade_linguagens) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+CREATE TABLE planejamento_inglest (
+    id_planejamento_inglest INT PRIMARY KEY AUTO_INCREMENT,
+    tema VARCHAR(300) NOT NULL UNIQUE,
+    objetivos VARCHAR(300) NOT NULL UNIQUE,
+    area_conhecimento VARCHAR(300) NOT NULL UNIQUE,
+    competencias_gerais_linguagens VARCHAR(400) NOT NULL UNIQUE,
+    competencias_especificas_linguagens VARCHAR(400) NOT NULL UNIQUE,
+    habilidades_linguagens VARCHAR(400) NOT NULL UNIQUE,
+    objetos VARCHAR(400) NOT NULL UNIQUE,
+    descricao VARCHAR(400) NOT NULL UNIQUE,
+    recursos VARCHAR(255) NOT NULL UNIQUE,
+    avaliacao VARCHAR(255) NOT NULL UNIQUE,
+    FOREIGN KEY (competencias_gerais_linguagens) REFERENCES competencias_gerais_linguagens (competencia_geral_linguagens) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (competencias_especificas_linguagens) REFERENCES competencias_especificas_linguagens (competencia_especifica_linguagens) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (habilidades_linguagens) REFERENCES habilidades_linguagens (codigo_habilidade_linguagens) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+
+CREATE TABLE planejamento_espanholp (
+    id_planejamento_espanholp INT PRIMARY KEY AUTO_INCREMENT,
+    tema VARCHAR(300) NOT NULL UNIQUE,
+    objetivos VARCHAR(300) NOT NULL UNIQUE,
+    area_conhecimento VARCHAR(300) NOT NULL UNIQUE,
+    competencias_gerais_linguagens VARCHAR(400) NOT NULL UNIQUE,
+    competencias_especificas_linguagens VARCHAR(400) NOT NULL UNIQUE,
+    habilidades_linguagens VARCHAR(400) NOT NULL UNIQUE,
+    objetos VARCHAR(400) NOT NULL UNIQUE,
+    descricao VARCHAR(400) NOT NULL UNIQUE,
+    recursos VARCHAR(255) NOT NULL UNIQUE,
+    avaliacao VARCHAR(255) NOT NULL UNIQUE,
+    FOREIGN KEY (competencias_gerais_linguagens) REFERENCES competencias_gerais_linguagens (competencia_geral_linguagens) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (competencias_especificas_linguagens) REFERENCES competencias_especificas_linguagens (competencia_especifica_linguagens) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (habilidades_linguagens) REFERENCES habilidades_linguagens (codigo_habilidade_linguagens) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+CREATE TABLE planejamento_espanhols (
+    id_planejamento_espanhols INT PRIMARY KEY AUTO_INCREMENT,
+    tema VARCHAR(300) NOT NULL UNIQUE,
+    objetivos VARCHAR(300) NOT NULL UNIQUE,
+    area_conhecimento VARCHAR(300) NOT NULL UNIQUE,
+    competencias_gerais_linguagens VARCHAR(400) NOT NULL UNIQUE,
+    competencias_especificas_linguagens VARCHAR(400) NOT NULL UNIQUE,
+    habilidades_linguagens VARCHAR(400) NOT NULL UNIQUE,
+    objetos VARCHAR(400) NOT NULL UNIQUE,
+    descricao VARCHAR(400) NOT NULL UNIQUE,
+    recursos VARCHAR(255) NOT NULL UNIQUE,
+    avaliacao VARCHAR(255) NOT NULL UNIQUE,
+    FOREIGN KEY (competencias_gerais_linguagens) REFERENCES competencias_gerais_linguagens (competencia_geral_linguagens) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (competencias_especificas_linguagens) REFERENCES competencias_especificas_linguagens (competencia_especifica_linguagens) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (habilidades_linguagens) REFERENCES habilidades_linguagens (codigo_habilidade_linguagens) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+CREATE TABLE planejamento_espanholt (
+    id_planejamento_espanholt INT PRIMARY KEY AUTO_INCREMENT,
+    tema VARCHAR(300) NOT NULL UNIQUE,
+    objetivos VARCHAR(300) NOT NULL UNIQUE,
+    area_conhecimento VARCHAR(300) NOT NULL UNIQUE,
+    competencias_gerais_linguagens VARCHAR(400) NOT NULL UNIQUE,
+    competencias_especificas_linguagens VARCHAR(400) NOT NULL UNIQUE,
+    habilidades_linguagens VARCHAR(400) NOT NULL UNIQUE,
+    objetos VARCHAR(400) NOT NULL UNIQUE,
+    descricao VARCHAR(400) NOT NULL UNIQUE,
+    recursos VARCHAR(255) NOT NULL UNIQUE,
+    avaliacao VARCHAR(255) NOT NULL UNIQUE,
+    FOREIGN KEY (competencias_gerais_linguagens) REFERENCES competencias_gerais_linguagens (competencia_geral_linguagens) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (competencias_especificas_linguagens) REFERENCES competencias_especificas_linguagens (competencia_especifica_linguagens) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (habilidades_linguagens) REFERENCES habilidades_linguagens (codigo_habilidade_linguagens) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+
+CREATE TABLE planejamento_educacao_fisicap (
+    id_planejamento_educacao_fisicap INT PRIMARY KEY AUTO_INCREMENT,
+    tema VARCHAR(300) NOT NULL UNIQUE,
+    objetivos VARCHAR(300) NOT NULL UNIQUE,
+    area_conhecimento VARCHAR(300) NOT NULL UNIQUE,
+    competencias_gerais_linguagens VARCHAR(400) NOT NULL UNIQUE,
+    competencias_especificas_linguagens VARCHAR(400) NOT NULL UNIQUE,
+    habilidades_linguagens VARCHAR(400) NOT NULL UNIQUE,
+    objetos VARCHAR(400) NOT NULL UNIQUE,
+    descricao VARCHAR(400) NOT NULL UNIQUE,
+    recursos VARCHAR(255) NOT NULL UNIQUE,
+    avaliacao VARCHAR(255) NOT NULL UNIQUE,
+    FOREIGN KEY (competencias_gerais_linguagens) REFERENCES competencias_gerais_linguagens (competencia_geral_linguagens) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (competencias_especificas_linguagens) REFERENCES competencias_especificas_linguagens (competencia_especifica_linguagens) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (habilidades_linguagens) REFERENCES habilidades_linguagens (codigo_habilidade_linguagens) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+
+CREATE TABLE planejamento_educacao_fisicas (
+    id_planejamento_educacao_fisicas INT PRIMARY KEY AUTO_INCREMENT,
+    tema VARCHAR(300) NOT NULL UNIQUE,
+    objetivos VARCHAR(300) NOT NULL UNIQUE,
+    area_conhecimento VARCHAR(300) NOT NULL UNIQUE,
+    competencias_gerais_linguagens VARCHAR(400) NOT NULL UNIQUE,
+    competencias_especificas_linguagens VARCHAR(400) NOT NULL UNIQUE,
+    habilidades_linguagens VARCHAR(400) NOT NULL UNIQUE,
+    objetos VARCHAR(400) NOT NULL UNIQUE,
+    descricao VARCHAR(400) NOT NULL UNIQUE,
+    recursos VARCHAR(255) NOT NULL UNIQUE,
+    avaliacao VARCHAR(255) NOT NULL UNIQUE,
+    FOREIGN KEY (competencias_gerais_linguagens) REFERENCES competencias_gerais_linguagens (competencia_geral_linguagens) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (competencias_especificas_linguagens) REFERENCES competencias_especificas_linguagens (competencia_especifica_linguagens) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (habilidades_linguagens) REFERENCES habilidades_linguagens (codigo_habilidade_linguagens) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+CREATE TABLE planejamento_educacao_fisicat (
+    id_planejamento_educacao_fisicat INT PRIMARY KEY AUTO_INCREMENT,
+    tema VARCHAR(300) NOT NULL UNIQUE,
+    objetivos VARCHAR(300) NOT NULL UNIQUE,
+    area_conhecimento VARCHAR(300) NOT NULL UNIQUE,
+    competencias_gerais_linguagens VARCHAR(400) NOT NULL UNIQUE,
+    competencias_especificas_linguagens VARCHAR(400) NOT NULL UNIQUE,
+    habilidades_linguagens VARCHAR(400) NOT NULL UNIQUE,
+    objetos VARCHAR(400) NOT NULL UNIQUE,
+    descricao VARCHAR(400) NOT NULL UNIQUE,
+    recursos VARCHAR(255) NOT NULL UNIQUE,
+    avaliacao VARCHAR(255) NOT NULL UNIQUE,
+    FOREIGN KEY (competencias_gerais_linguagens) REFERENCES competencias_gerais_linguagens (competencia_geral_linguagens) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (competencias_especificas_linguagens) REFERENCES competencias_especificas_linguagens (competencia_especifica_linguagens) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (habilidades_linguagens) REFERENCES habilidades_linguagens (codigo_habilidade_linguagens) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+CREATE TABLE planejamento_artesp (
+    id_planejamento_artesp INT PRIMARY KEY AUTO_INCREMENT,
+    tema VARCHAR(300) NOT NULL UNIQUE,
+    objetivos VARCHAR(300) NOT NULL UNIQUE,
+    area_conhecimento VARCHAR(300) NOT NULL UNIQUE,
+    competencias_gerais_linguagens VARCHAR(400) NOT NULL UNIQUE,
+    competencias_especificas_linguagens VARCHAR(400) NOT NULL UNIQUE,
+    habilidades_linguagens VARCHAR(400) NOT NULL UNIQUE,
+    objetos VARCHAR(400) NOT NULL UNIQUE,
+    descricao VARCHAR(400) NOT NULL UNIQUE,
+    recursos VARCHAR(255) NOT NULL UNIQUE,
+    avaliacao VARCHAR(255) NOT NULL UNIQUE,
+    FOREIGN KEY (competencias_gerais_linguagens) REFERENCES competencias_gerais_linguagens (competencia_geral_linguagens) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (competencias_especificas_linguagens) REFERENCES competencias_especificas_linguagens (competencia_especifica_linguagens) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (habilidades_linguagens) REFERENCES habilidades_linguagens (codigo_habilidade_linguagens) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+CREATE TABLE planejamento_artess (
+    id_planejamento_artess INT PRIMARY KEY AUTO_INCREMENT,
+    tema VARCHAR(300) NOT NULL UNIQUE,
+    objetivos VARCHAR(300) NOT NULL UNIQUE,
+    area_conhecimento VARCHAR(300) NOT NULL UNIQUE,
+    competencias_gerais_linguagens VARCHAR(400) NOT NULL UNIQUE,
+    competencias_especificas_linguagens VARCHAR(400) NOT NULL UNIQUE,
+    habilidades_linguagens VARCHAR(400) NOT NULL UNIQUE,
+    objetos VARCHAR(400) NOT NULL UNIQUE,
+    descricao VARCHAR(400) NOT NULL UNIQUE,
+    recursos VARCHAR(255) NOT NULL UNIQUE,
+    avaliacao VARCHAR(255) NOT NULL UNIQUE,
+    FOREIGN KEY (competencias_gerais_linguagens) REFERENCES competencias_gerais_linguagens (competencia_geral_linguagens) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (competencias_especificas_linguagens) REFERENCES competencias_especificas_linguagens (competencia_especifica_linguagens) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (habilidades_linguagens) REFERENCES habilidades_linguagens (codigo_habilidade_linguagens) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+
+CREATE TABLE planejamento_artest (
+    id_planejamento_artest INT PRIMARY KEY AUTO_INCREMENT,
+    tema VARCHAR(300) NOT NULL UNIQUE,
+    objetivos VARCHAR(300) NOT NULL UNIQUE,
+    area_conhecimento VARCHAR(300) NOT NULL UNIQUE,
+    competencias_gerais_linguagens VARCHAR(400) NOT NULL UNIQUE,
+    competencias_especificas_linguagens VARCHAR(400) NOT NULL UNIQUE,
+    habilidades_linguagens VARCHAR(400) NOT NULL UNIQUE,
+    objetos VARCHAR(400) NOT NULL UNIQUE,
+    descricao VARCHAR(400) NOT NULL UNIQUE,
+    recursos VARCHAR(255) NOT NULL UNIQUE,
+    avaliacao VARCHAR(255) NOT NULL UNIQUE,
+    FOREIGN KEY (competencias_gerais_linguagens) REFERENCES competencias_gerais_linguagens (competencia_geral_linguagens) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (competencias_especificas_linguagens) REFERENCES competencias_especificas_linguagens (competencia_especifica_linguagens) ON UPDATE CASCADE ON DELETE CASCADE,
+    FOREIGN KEY (habilidades_linguagens) REFERENCES habilidades_linguagens (codigo_habilidade_linguagens) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+
+
+
