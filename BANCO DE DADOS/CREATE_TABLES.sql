@@ -813,3 +813,52 @@ CREATE TABLE planejamento_mundo_trabalhot (
 );
 
 
+CREATE TABLE comp_socio(
+	id_comp_socio INT PRIMARY KEY AUTO_INCREMENT,
+    comp_socio VARCHAR(255) NOT NULL UNIQUE
+);
+
+CREATE TABLE comp_sociohab(
+	id_compsocio_hab INT PRIMARY KEY AUTO_INCREMENT,
+    comp_socioemocional VARCHAR(255) NOT NULL UNIQUE,
+    codigo VARCHAR(10) NOT NULL UNIQUE,
+    habilidade VARCHAR(400) NOT NULL UNIQUE,
+    FOREIGN KEY (comp_socioemocional) REFERENCES comp_socio(comp_socio)
+    
+);
+
+CREATE TABLE projetodevidap(
+	id_proj_vidap INT PRIMARY KEY AUTO_INCREMENT,
+    tema VARCHAR(255) NOT NULL UNIQUE,
+    competencia_socio VARCHAR(255) NOT NULL UNIQUE,
+    habilidade VARCHAR(500) NOT NULL UNIQUE,
+    objetos VARCHAR(300) NOT NULL UNIQUE,
+    objetivos VARCHAR(300) NOT NULL UNIQUE,
+    FOREIGN KEY (competencias_socio) REFERENCES comp_socio(comp_socio),
+    FOREIGN KEY (habilidade) REFERENCES comp_sociohab(habilidade)
+    
+);
+
+CREATE TABLE projetodevidas(
+	id_proj_vidas INT PRIMARY KEY AUTO_INCREMENT,
+    tema VARCHAR(255) NOT NULL UNIQUE,
+    competencia_socio VARCHAR(255) NOT NULL UNIQUE,
+    habilidade VARCHAR(500) NOT NULL UNIQUE,
+    objetos VARCHAR(300) NOT NULL UNIQUE,
+    objetivos VARCHAR(300) NOT NULL UNIQUE,
+    FOREIGN KEY (competencias_socio) REFERENCES comp_socio(comp_socio),
+    FOREIGN KEY (habilidade) REFERENCES comp_sociohab(habilidade)
+    
+);
+
+CREATE TABLE projetodevidat(
+	id_proj_vidat INT PRIMARY KEY AUTO_INCREMENT,
+    tema VARCHAR(255) NOT NULL UNIQUE,
+    competencia_socio VARCHAR(255) NOT NULL UNIQUE,
+    habilidade VARCHAR(500) NOT NULL UNIQUE,
+    objetos VARCHAR(300) NOT NULL UNIQUE,
+    objetivos VARCHAR(300) NOT NULL UNIQUE,
+    FOREIGN KEY (competencias_socio) REFERENCES comp_socio(comp_socio),
+    FOREIGN KEY (habilidade) REFERENCES comp_sociohab(habilidade)
+    
+);
