@@ -90,10 +90,18 @@ Coleta de métricas sobre o uso do software e o progresso dos educadores e aluno
 # Apresentação da interface
 
 ## Cadastro e Login
-![image](https://github.com/matheussoares1/Sysplaneducation-Software-de-auxilio-pedagogico/assets/111543203/77cca3da-8417-4422-9d6c-29f4a330ab9b)
+![image](https://github.com/matheussoares1/Sysplaneducation-Software-de-auxilio-pedagogico/assets/111543203/974e51cf-bb00-4d54-ad53-9322bab6a641)
 
-## Visão Inicial Professor
-![image](https://github.com/matheussoares1/Sysplaneducation-Software-de-auxilio-pedagogico/assets/111543203/372a84fe-1894-42aa-9b82-3b89fd17d291)
+## Visão Professor
+![image](https://github.com/matheussoares1/Sysplaneducation-Software-de-auxilio-pedagogico/assets/111543203/2bdc4826-4a85-4f1b-8fa9-ad82df0a1537)
+
+
+## Visão Coordenador
+![image](https://github.com/matheussoares1/Sysplaneducation-Software-de-auxilio-pedagogico/assets/111543203/d0ed82e3-8aa0-4557-a2a8-32aafae47c1f)
+
+## Diretor
+![image](https://github.com/matheussoares1/Sysplaneducation-Software-de-auxilio-pedagogico/assets/111543203/19e03dd1-ff98-4461-9ab1-e9e6437b2bef)
+
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
@@ -124,9 +132,7 @@ Coleta de métricas sobre o uso do software e o progresso dos educadores e aluno
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
-<div align="center">
-  <img height="200" src="https://media0.giphy.com/media/nP8SZtRxihoTZ6W90N/giphy.gif?cid=ecf05e477iyndbvxkkckd25n8m8o7jalcs9y383x6oygr58b&ep=v1_gifs_search&rid=giphy.gif&ct=g"  />
-</div>
+
 
 
 
