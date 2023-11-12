@@ -123,14 +123,25 @@ Coleta de métricas sobre o uso do software e o progresso dos educadores e aluno
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
-<h3 align="left">👩‍💻  Desenvolvedores </h3>
+<h2 align="left">👩‍💻  Desenvolvedores </h3>
+
+### Scrum Master / Back-End Developer
 
 [![GitHub](https://img.shields.io/badge/GitHub-Matheus-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/matheussoares1) <br>
+
+### Front-End Developer
+
 [![GitHub](https://img.shields.io/badge/GitHub-Anderson-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/0AndersonMelo0)<br>
+
+### Database Designer / Database Programmer
+
 [![GitHub](https://img.shields.io/badge/GitHub-Samuel-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SamuelZr)<br>
+
+### Front-End Developer
+
 [![GitHub](https://img.shields.io/badge/GitHub-Luis-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Luis-Eduardo-Rodrigues)<br>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
 
 
 
