@@ -103,23 +103,6 @@ Coleta de métricas sobre o uso do software e o progresso dos educadores e aluno
 ![image](https://github.com/matheussoares1/Sysplaneducation-Software-de-auxilio-pedagogico/assets/111543203/19e03dd1-ff98-4461-9ab1-e9e6437b2bef)
 
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
-# Bancos de dados em modelo conceitual
-### 1.Linguagens e Códigos
-
-![Linguagens](https://github.com/matheussoares1/Sysplaneducation-Software-de-auxilio-pedagogico/assets/111543203/5d392604-0b8c-417b-bc0a-4bb0ff0fdf76)
-
-### 2.Ciências Humanas
-![Humanas](https://github.com/matheussoares1/Sysplaneducation-Software-de-auxilio-pedagogico/assets/111543203/07426df5-11fe-44f6-8476-1001ff0f4020)
-
-### 3.Ciências da Natureza
-
-### 4.Matemática e suas tecnologias
-
-### 5.Disciplinas Extras
-![extras](https://github.com/matheussoares1/Sysplaneducation-Software-de-auxilio-pedagogico/assets/111543203/060e247e-c207-4bac-9464-a03ef7192319)
-
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
